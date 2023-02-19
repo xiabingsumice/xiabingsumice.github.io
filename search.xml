@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>VisualStudio常用快捷键</title>
+      <link href="/2023/02/18/VisualStudio%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
+      <url>/2023/02/18/VisualStudio%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE/</url>
+      
+        <content type="html"><![CDATA[<h2 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h2><blockquote><p>调试</p></blockquote><ol><li>设置断点：<code>F9</code></li><li>开始调试：<code>F5</code></li><li>直接执行，不调试；<code>Ctrl+F5</code></li><li>暂停调试&#x2F;执行：<code>Shift+F5</code></li><li>单步步过，不进函数:<code>F10</code></li><li>单步步入，进函数：<code>F11</code></li></ol><blockquote><p>写作</p></blockquote><ol><li>注释<code>ctrl+k —&gt;  ctrl+c  ==  ctrl+k+c</code></li><li>取消注释<code>Ctrl+K+U</code></li><li>选中同步操作<code>alt+鼠标点选</code> ****或 <code>alt+shift+鼠标拖动</code></li><li>格式化选中的代码：<code>Ctrl+K+F</code></li><li>删除当前行：<code>ctrl+L</code></li><li>复制当前行到下一行：<code>ctrl+d</code></li><li>匹配跳转括号：<code>ctrl+[</code></li><li>转到函数或变量定义的地方：<code>F12</code></li><li>回到原处 与F12搭配使用：<code>ctrl+_</code></li></ol><blockquote><p>窗口</p></blockquote><ol><li><code>ctrl+alt+m 1/2/3</code> 内存查看</li><li><code>ctrl++alt+v a</code>  自动窗口</li><li><code>F4</code> 属性窗口</li></ol>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 工具使用类 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>all will be fine</title>
+      <link href="/2023/02/16/all-will-be-fine/"/>
+      <url>/2023/02/16/all-will-be-fine/</url>
+      
+        <content type="html"><![CDATA[<p>城市万家灯火，无妨，我去长安隔江点火。</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>
