@@ -4,6 +4,44 @@
   
     
     <entry>
+      <title>吾爱160 - ajj.1</title>
+      <link href="/2023/06/07/%E5%90%BE%E7%88%B1160-ajj-1/"/>
+      <url>/2023/06/07/%E5%90%BE%E7%88%B1160-ajj-1/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>未完待续</p></blockquote><h2 id="暴力破解"><a href="#暴力破解" class="headerlink" title="暴力破解"></a>暴力破解</h2><h2 id="算法部分"><a href="#算法部分" class="headerlink" title="算法部分"></a>算法部分</h2><h2 id="注册机"><a href="#注册机" class="headerlink" title="注册机"></a>注册机</h2>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 逆向分析 每日一题 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>逆向基础知识 - 不同类型程序特性速览</title>
+      <link href="/2023/06/07/%E9%80%86%E5%90%91%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86-%E8%AF%AD%E8%A8%80%E7%89%B9%E6%80%A7%E9%80%9F%E8%A7%88/"/>
+      <url>/2023/06/07/%E9%80%86%E5%90%91%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86-%E8%AF%AD%E8%A8%80%E7%89%B9%E6%80%A7%E9%80%9F%E8%A7%88/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>– 未完待续</p></blockquote><h2 id="C-x2F-C-MFC"><a href="#C-x2F-C-MFC" class="headerlink" title="C&#x2F;C++ - MFC"></a>C&#x2F;C++ - MFC</h2><h2 id="Delphi"><a href="#Delphi" class="headerlink" title="Delphi"></a>Delphi</h2><ol><li><p>Delphi程序开发依赖于事件，使用专门工具IDR、dede等可以很大程序帮助我们快速分析Delphi程序，辅助分析及定位关键点。</p></li><li><p>Delphi函数调用约定：</p><p>参数 - 寄存器顺序：eax、edx、ecx，大于三个通过堆栈传递。</p><p>函数返回值是放在<strong>edx</strong>中，调用参数大多放在<strong>eax</strong>中。</p></li><li><p>call调用用户函数视情况需跟进查看</p></li></ol><h2 id="VB"><a href="#VB" class="headerlink" title="VB"></a>VB</h2><h2 id="NET"><a href="#NET" class="headerlink" title=".NET"></a>.NET</h2><h2 id=""><a href="#" class="headerlink" title=""></a></h2>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 软件逆向 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Butterfly主题美化</title>
       <link href="/2023/02/20/Butterfly%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96/"/>
       <url>/2023/02/20/Butterfly%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96/</url>
@@ -27,7 +65,7 @@
       <link href="/2023/02/18/VisualStudio%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
       <url>/2023/02/18/VisualStudio%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE/</url>
       
-        <content type="html"><![CDATA[<h2 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h2><blockquote><p>调试</p></blockquote><ol><li>设置断点：<code>F9</code></li><li>开始调试：<code>F5</code></li><li>直接执行，不调试；<code>Ctrl+F5</code></li><li>暂停调试&#x2F;执行：<code>Shift+F5</code></li><li>单步步过，不进函数:<code>F10</code></li><li>单步步入，进函数：<code>F11</code></li></ol><blockquote><p>写作</p></blockquote><ol><li>注释<code>ctrl+k —&gt;  ctrl+c  ==  ctrl+k+c</code></li><li>取消注释<code>Ctrl+K+U</code></li><li>选中同步操作<code>alt+鼠标点选</code> ****或 <code>alt+shift+鼠标拖动</code></li><li>格式化选中的代码：<code>Ctrl+K+F</code></li><li>删除当前行：<code>ctrl+L</code></li><li>复制当前行到下一行：<code>ctrl+d</code></li><li>匹配跳转括号：<code>ctrl+[</code></li><li>转到函数或变量定义的地方：<code>F12</code></li><li>回到原处 与F12搭配使用：<code>ctrl+_</code></li></ol><blockquote><p>窗口</p></blockquote><ol><li><code>ctrl+alt+m 1/2/3</code> 内存查看</li><li><code>ctrl++alt+v a</code>  自动窗口</li><li><code>F4</code> 属性窗口</li></ol>]]></content>
+        <content type="html"><![CDATA[<h2 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h2><blockquote><p>调试</p></blockquote><ol><li>设置断点：<code>F9</code></li><li>开始调试：<code>F5</code></li><li>直接执行，不调试；<code>Ctrl+F5</code></li><li>暂停调试&#x2F;执行：<code>Shift+F5</code></li><li>单步步过，不进函数:<code>F10</code></li><li>单步步入，进函数：<code>F11</code></li></ol><blockquote><p>写作</p></blockquote><ol><li>注释<code>ctrl+k —&gt;  ctrl+c  ==  ctrl+k+c</code></li><li>取消注释<code>Ctrl+K+U</code></li><li>选中区域操作<code>alt+鼠标点选</code> ****或 <code>alt+shift+鼠标拖动</code></li><li>选中相同内容<code>alt+shift+.</code></li><li>格式化选中的代码：<code>Ctrl+K+F</code></li><li>删除当前行：<code>ctrl+L</code></li><li>复制当前行到下一行：<code>ctrl+d</code></li><li>匹配跳转括号：<code>ctrl+[</code></li><li>转到函数或变量定义的地方：<code>F12</code></li><li>回到原处 与F12搭配使用：<code>ctrl+_</code></li></ol><blockquote><p>窗口</p></blockquote><ol><li><code>ctrl+alt+m 1/2/3</code> 内存查看</li><li><code>ctrl++alt+v a</code>  自动窗口</li><li><code>F4</code> 属性窗口</li></ol>]]></content>
       
       
       
