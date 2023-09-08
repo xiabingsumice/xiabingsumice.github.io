@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>Delphi程序逆向</title>
+      <link href="/2023/09/08/Delphi%E7%A8%8B%E5%BA%8F%E9%80%86%E5%90%91/"/>
+      <url>/2023/09/08/Delphi%E7%A8%8B%E5%BA%8F%E9%80%86%E5%90%91/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Delphi程序逆向"><a href="#Delphi程序逆向" class="headerlink" title="Delphi程序逆向"></a>Delphi程序逆向</h1><p>Delphi是是使用Pascal语言的一种开发工具，类似于MFC，是一种封装好的界面开发环境。</p><h3 id="函数调用约定"><a href="#函数调用约定" class="headerlink" title="函数调用约定"></a>函数调用约定</h3><p>Delphi遵循_fastcall调用约定，但是与Windows的_fastcall略有不同，参数顺序为eax为第一个参数、edx为第二个参数、ecx为第三个参数，大于3个的参数通过堆栈传递，大于三个的堆栈顺序从左到右依次压栈，堆栈由被调用者恢复。</p><h3 id="变量结构定义"><a href="#变量结构定义" class="headerlink" title="变量结构定义"></a>变量结构定义</h3><p>Delphi常用的字符串的内存布局不同于C&#x2F;C++的char*或则string对象，Delphi使用的字符串都是Pascal的字符串，在原始字符串前面存放的是字符串的长度.</p><h3 id="逆向建议"><a href="#逆向建议" class="headerlink" title="逆向建议"></a>逆向建议</h3><ul><li>控件绑定着响应回调函数，可以在Delphi程序的RCDATA资源中查看到。</li><li>因为IDA针对Delphi库函数识别不高，使用专用反汇编工具解析。使用IDR解析后生成idc脚本文件供IDA导入函数。</li><li>IDA里边设置函数识别库为对应版本的语言函数库</li><li>手动微调：<ul><li>Load a new file,取消勾选的Analysis下的两个自动分析选项</li><li>Options–&gt;Compiler:Compiler（Delphi）、Calling convention(FastCall)</li><li>Options–&gt;General–&gt;String:Default string literal type(Pascal&#x2F;Pascal16)</li><li>View–&gt;View–&gt;Open Subviews–&gt;Type libraries, remove the defaults</li><li>View–&gt;Open Subviews–&gt;Signatures–&gt;Apply new Signatures:选择delphi相关Signatures</li><li>Edit–&gt;Select all,在IDA View区域右键Analyze selected area</li></ul></li></ul><blockquote><p>使用IDR的原因</p></blockquote><ul><li>得益于多个版本的符号bin文件，IDR能够识别大部分Delphi库函数，比IDA的识别率高很多</li><li>默认设置直接解析delphi程序的字符串信息，在IDR Strings可以查看和搜索这些字符串</li><li>可视化查看delphi的RCDATA信息Form界面信息，并且能够直接获得按钮等元素的响应函数地址</li><li>ClassViewer窗口可直接查看部分类及函数名称，猜测这部分函数为RCDATA中声明的函数或则类似C++的RTTI信息</li></ul><h3 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h3><p><a href="http://www.youngroe.com/2019/07/01/Windows/delphi_reverse_summary/">Delphi程序逆向反汇编技巧小记</a></p><p><a href="https://www.jb51.net/article/257855.htm">Dephi逆向工具Dede导出函数名MAP导入到IDA中的实现方法_python_脚本之家</a></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 逆向 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Windbg和mona常用指令</title>
       <link href="/2023/08/24/Windbg%E5%92%8Cmona%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/"/>
       <url>/2023/08/24/Windbg%E5%92%8Cmona%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/</url>
