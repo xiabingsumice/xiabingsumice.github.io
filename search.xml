@@ -8,7 +8,7 @@
       <link href="/2023/09/11/WinDbg%E5%8F%8C%E6%9C%BA%E8%B0%83%E8%AF%95/"/>
       <url>/2023/09/11/WinDbg%E5%8F%8C%E6%9C%BA%E8%B0%83%E8%AF%95/</url>
       
-        <content type="html"><![CDATA[<h1 id="WinDbg双机调试"><a href="#WinDbg双机调试" class="headerlink" title="WinDbg双机调试"></a>WinDbg双机调试</h1><h3 id="双机调试软件VirtualKD"><a href="#双机调试软件VirtualKD" class="headerlink" title="双机调试软件VirtualKD"></a>双机调试软件VirtualKD</h3><blockquote><p>玄学问题 - 版本差异无法调试问题</p></blockquote><p>建议使用版本：VirtualKD-Redux-2020.5</p><p><a href="WinDbg%E5%8F%8C%E6%9C%BA%E8%B0%83%E8%AF%95/VirtualKD-Redux-2020.5.zip">VirtualKD-Redux-2020.5.zip</a></p><h3 id="符号表"><a href="#符号表" class="headerlink" title="符号表"></a>符号表</h3><p>Windbg界面按CTRL+S</p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SRV*D:\symbols_folder\i386*http:<span class="comment">//msdl.microsoft.com/download/symbols</span></span><br></pre></td></tr></table></figure><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">## 重新加载</span><br><span class="line">.reload /f</span><br></pre></td></tr></table></figure><p>其他方法：</p><blockquote><p>参考文章：<a href="https://bbs.kanxue.com/thread-251052.htm">https://bbs.kanxue.com/thread-251052.htm</a></p></blockquote>]]></content>
+        <content type="html"><![CDATA[<h1 id="WinDbg双机调试"><a href="#WinDbg双机调试" class="headerlink" title="WinDbg双机调试"></a>WinDbg双机调试</h1><h3 id="双机调试软件VirtualKD"><a href="#双机调试软件VirtualKD" class="headerlink" title="双机调试软件VirtualKD"></a>双机调试软件VirtualKD</h3><blockquote><p>玄学问题 - 版本差异无法调试问题</p></blockquote><p>建议使用版本：VirtualKD-Redux-2020.5</p><p><a href="VirtualKD-Redux-2020.5.zip">VirtualKD-Redux-2020.5.zip</a></p><h3 id="符号表"><a href="#符号表" class="headerlink" title="符号表"></a>符号表</h3><p>Windbg界面按CTRL+S</p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SRV*D:\symbols_folder\i386*http:<span class="comment">//msdl.microsoft.com/download/symbols</span></span><br></pre></td></tr></table></figure><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">## 重新加载</span><br><span class="line">.reload /f</span><br></pre></td></tr></table></figure><p>其他方法：</p><blockquote><p>参考文章：<a href="https://bbs.kanxue.com/thread-251052.htm">https://bbs.kanxue.com/thread-251052.htm</a></p></blockquote>]]></content>
       
       
       
@@ -93,6 +93,19 @@
             <tag> 逆向 </tag>
             
         </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>IDA-Python设置</title>
+      <link href="/2023/06/13/IDA-Python%E8%AE%BE%E7%BD%AE/"/>
+      <url>/2023/06/13/IDA-Python%E8%AE%BE%E7%BD%AE/</url>
+      
+        <content type="html"><![CDATA[<h1 id="IDA-Python设置"><a href="#IDA-Python设置" class="headerlink" title="IDA-Python设置"></a>IDA-Python设置</h1><h2 id="版本切换"><a href="#版本切换" class="headerlink" title="版本切换"></a>版本切换</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">py -版本</span><br></pre></td></tr></table></figure><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">利用环境变量下寻找变量名的方式</span><br><span class="line">更改文件名，从而实现打开不同版本的程序</span><br><span class="line">python27</span><br><span class="line">python37</span><br></pre></td></tr></table></figure><h3 id="环境变量"><a href="#环境变量" class="headerlink" title="环境变量"></a>环境变量</h3><table><thead><tr><th>变量名</th><th>描述</th></tr></thead><tbody><tr><td>PYTHONPATH</td><td>PYTHONPATH是Python搜索路径，默认我们import的模块都会从PYTHONPATH里面寻找。</td></tr><tr><td>PYTHONSTARTUP</td><td>Python启动后，先寻找PYTHONSTARTUP环境变量，然后执行此变量指定的文件中的代码。</td></tr><tr><td>PYTHONCASEOK</td><td>加入PYTHONCASEOK的环境变量, 就会使python导入模块的时候不区分大小写.</td></tr><tr><td>PYTHONHOME</td><td>另一种模块搜索路径。它通常内嵌于的PYTHONSTARTUP或PYTHONPATH目录中，使得两个模块库更容易切换。</td></tr></tbody></table><p>PYTHONHOME环境变量用于告诉Python解释器其基本安装路径</p><p>PATH用于指定系统查找可执行文件的路径。</p><blockquote><p>所以部分python加载问题中，可以通过添加PYTHONHOME来解决pyhon配置问题</p></blockquote><p>例如：IDA中的import site failure，可以通过设置PYTHONHOME使得指定好PYTHON安装目录，使其加载变量指定文件中的DLL模块及代码。</p><p><a href="https://blog.csdn.net/counsellor/article/details/98968082">idapython: importing “site” failed报错的解决方案_counsellor的博客-CSDN博客</a></p>]]></content>
+      
+      
       
     </entry>
     
